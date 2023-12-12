@@ -1,0 +1,218 @@
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan : hsl(178, 100%, 50%);
+    --CyanT : rgba(0, 255, 255, 0.7);
+    --VerydarkblueM : hsl(217, 54%, 11%);
+    --VerydarkblueC: hsl(216, 50%, 16%);
+    --VerydarkblueL: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    background-color: var(--VerydarkblueM);
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 600;
+    margin: 1.5rem 0;
+    font-size: 2.6rem;
+    transition: color 0.5s;
+}
+
+h2 {
+    color: var(--Cyan);
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+p {
+    color: var(--Softblue);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+    margin-left: .5rem;
+    transition: color 0.5s;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--VerydarkblueL);
+}
+
+span {
+    color: var(--White);
+    margin-left: 0.7rem;
+    font-weight: 400;
+    transition: color 0.5s;
+}
+.contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 95vh;
+}
+
+.card {
+    background-color: var(--VerydarkblueC);
+    width: 85%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2.7rem;
+    -webkit-box-shadow: 0px 35px 50px 23px rgba(12,23,41,1);
+    box-shadow: 0px 35px 50px 23px rgba(12,23,41,1);
+    transition: box-shadow 0.5s;
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 37rem;
+    }
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+
+.precio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.precio p {
+    font-weight: 400;
+}
+
+.avatar {
+    width: 3.5rem;
+    margin-right: 1.5rem;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.editor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2rem;
+}
+
+.attribution {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .attribution {
+        color: var(--Softblue);
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.img {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+span:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.img:hover::before {
+    content: url('../images/icon-view.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--CyanT);
+    border-radius: 1rem;
+    opacity: 0.8; /* Ajusta la opacidad según tus preferencias */
+    z-index: 1; /* Asegura que esté sobre la imagen principal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img:hover img {
+    transition: filter 1s;
+}
+
+.img:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--Cyan);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:hover {
+    color: var(--Cyan);
+}
